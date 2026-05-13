@@ -24,7 +24,8 @@ function App() {
                    lg:w-[700px] 
                    rounded-2xl 
                  lg:bg-white
-                   lg:flex"
+                   lg:flex
+                   backdrop-blur-md"
       >
         <div className="lg:w-[40%]">
           <Topic />

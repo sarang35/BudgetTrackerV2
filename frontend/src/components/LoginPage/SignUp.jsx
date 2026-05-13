@@ -1,8 +1,12 @@
 import React from "react";
 
-export const Form = () => {
+export const SignUp = () => {
   return (
     <div className="mt-7 md-7">
+      <div className="font-DM-sans flex lg:block justify-center items-center pd-0 space-y-0 mt-5  text-[25px] lg:text-3xl font-bold ">
+        SIGN UP
+      </div>
+
       <form action="">
         <div className="flex flex-col mt-7">
           <label htmlFor="username">UserName:</label>
@@ -30,9 +34,15 @@ export const Form = () => {
             id="password"
             name="password"
           />
-          <button type="submit" className="lg:w-[80%] border-1 border-black mt-5 rounded-2xl h-8 lg:bg-green-300 backdrop-blur-2xl">Submit</button>
+          <button
+            type="submit"
+            className="lg:w-[80%] border-1 border-black mt-5 rounded-2xl h-8 lg:bg-green-300 backdrop-blur-2xl"
+          >
+            Submit
+          </button>
         </div>
       </form>
+      <div className="mt-13 text-[10px]">Already have a account?</div>
     </div>
   );
 };
