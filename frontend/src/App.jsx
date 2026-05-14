@@ -1,5 +1,8 @@
 import { useState } from "react";
-import Topic from "./components/LoginPage/Topic";
+import { SignUp } from "./components/LoginPage/SignUp";
+import { Outlet , Link } from "react-router-dom";
+import "./index.css"
+
 
 function App() {
   const [isSign, setIsSign] = useState("SignIn");
@@ -28,7 +31,7 @@ function App() {
                    backdrop-blur-md"
       >
         <div className="lg:w-[40%]">
-          <Topic />
+          <Outlet />
         </div>
         <div className="hidden lg:block bg-[url(./assets/BigScreen.jpg)] bg-cover rounded-2xl w-[60%]  m-2 mr-0">hi</div>
       </div>

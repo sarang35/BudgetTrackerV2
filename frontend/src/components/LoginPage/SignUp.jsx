@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet ,Link } from "react-router-dom";
 
 export const SignUp = () => {
   return (
@@ -42,7 +43,7 @@ export const SignUp = () => {
           </button>
         </div>
       </form>
-      <div className="mt-13 text-[10px]">Already have a account?</div>
+      <div className="mt-13 text-[10px]">Already have a account?<Link to="/SignIn">Sign In </Link></div>
     </div>
   );
 };
