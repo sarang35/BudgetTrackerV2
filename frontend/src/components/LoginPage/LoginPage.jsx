@@ -1,6 +1,8 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 export const LoginPage = () => {
+  const location = useLocation();
   return (
     <div
       className="min-h-screen 
@@ -25,7 +27,7 @@ export const LoginPage = () => {
                    lg:flex
                    backdrop-blur-md"
       >
-        <div className="className=lg:w-[40%] ml-5">
+        <div className="className=lg:w-[40%] ml-5 ">
           <Outlet />
         </div>
         <div className="hidden lg:block bg-[url(./assets/BigScreen.jpg)] bg-cover rounded-2xl w-[60%] ml-17">
